@@ -17,6 +17,7 @@
 
 const xs = [];
 const ys = [];
+// const ys1 = [];
 
 chartIt();
 
@@ -60,6 +61,8 @@ const myChart = new Chart(ctx, {
         xs.push(name);
         const age = elt[2]
         ys.push(parseFloat(age));
+        // const height = elt[3];
+        // ys1.push(parseFloat(height));
         console.log(name, age);
        });
     };
