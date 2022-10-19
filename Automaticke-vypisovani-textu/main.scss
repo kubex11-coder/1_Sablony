@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(212, 226, 238);
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.speed-selector {
+    position: absolute;
+    bottom: 50px;
+    background-color: aliceblue;
+    font-size: 20px;
+    padding: 10px 15px;
+}
+.speed-selector label {
+    margin-right: 10px;
+}
+
+.speed-selector input {
+    width: 60px;
+    padding: 3px;
+    font-size: 15px;
+    background-color: rgb(157, 168, 179);
+    border: none;
+    text-align: center;
+}
+
+.speed-selector input:focus {
+    outline: none;
+}
