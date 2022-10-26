@@ -292,8 +292,10 @@
 .contact__list {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 2rem;
-  font-size: 1.5rem;
+  grid-gap: 15px;
+}
+.contact__email, .contact__phone {
+  text-align: center;
 }
 .contact .social-icons {
   position: initial;
@@ -342,7 +344,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
   .contact__list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (min-width: 1600px) {
