@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .container {
@@ -48,6 +49,7 @@ body {
 
     /* width: 20%; */
     flex: 0.5;
+    transition: flex 0.5s ease-in-out;
 }
 
 .slide h2 {
@@ -63,4 +65,16 @@ body {
 }
 .slide.active h2 {
     opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100vw;
+    }
+
+    .slide:nth-of-type(4),
+    .slide:nth-of-type(5) {
+        display: none;
+    }
 }

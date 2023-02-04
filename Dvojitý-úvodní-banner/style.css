@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.navbar-test {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: antiquewhite;
+    z-index: 1000;
+}
+
+/* container slider */
+.container-slider {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Levá část barvy a texty */
+.slide-left {
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s linear;
+}
+
+.slide-left > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(158, 153, 153);
+    text-align: center;
+}
+
+.slide-left h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    margin-top: -80px;
+}
+.color-1 {
+    background-color: aquamarine;
+}
+.color-2 {
+    background-color: rgb(216, 218, 98);
+}
+.color-3 {
+    background-color: rgb(226, 111, 167);
+}
+.color-4 {
+    background-color: rgb(152, 237, 182);
+}
+
+/* Pravá část s obrázky */
+.slide-right {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition: transform 0.5s linear;
+}
+
+.slide-right > div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.image-1 {
+    background-image: url(img/obr1.jpg);
+}
+
+.image-2 {
+    background-image: url(img/obr2.jpg);
+}
+
+.image-3 {
+    background-image: url(img/obr3.jpg);
+}
+
+.image-4 {
+    background-image: url(img/obr4.jpg);
+}
+
+/* Ikonky šipek */
+
+.arrow-buttons .arrow {
+    position: absolute;
+    z-index: 100;
+    left: 35%;
+    top: 50%;
+}
+
+.arrow img {
+    width: 50px;
+}
+
+.arrow-down img {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+.arrow-down img:hover {
+    border: 1px solid black;
+}
+
+.arrow-up img {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.arrow-up img:hover {
+    border: 1px solid black;
+}
