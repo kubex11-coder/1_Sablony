@@ -1,0 +1,99 @@
+/*  700px a více */
+nav {
+    background-color: #141414;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+}
+
+.nav-header img {
+    width: 110px;
+    margin-left: 30px;
+}
+
+.nav-header button {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-list ul {
+    margin-right: 50px;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-left: 10px;
+}
+.nav-list a {
+    text-decoration: none;
+    color: #e5e5e5;
+}
+
+/* 700px a méně */
+
+@media (max-width: 700px) {
+    .navigation {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-header {
+        width: 100%;
+    }
+
+    .nav-header button {
+        display: block;
+        background-color: transparent;
+
+        border: none;
+    }
+
+    .hamburger-icon {
+        color: #e5e5e5;
+        font-size: 25px;
+        margin-right: 20px;
+    }
+
+    .nav-list li {
+        width: 100%;
+        padding: 20px 5px;
+        text-align: center;
+    }
+
+    .nav-list a {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    /* classy pro použití v reactu */
+
+    .hide {
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.2s linear;
+    }
+
+    .show {
+        height: 40vh;
+        transition: all 0.2s linear;
+    }
+}
